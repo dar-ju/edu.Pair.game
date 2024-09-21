@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра в пары</title>
+  <link rel="icon" href="favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <div class="container flex">
+    <div class="setup-block">
+      <h1 class="title">Игра в&nbsp;пары</h1>
+      <form class="form">
+        <span class="form__title">Введите четное количество карточек</span>
+        <label for="hor" class="label">
+          <input class="input" type="number" placeholder="от 2 до 10">
+          <span class="form__text">по&nbspстороне</span>
+        </label>
+        <button class="btn">Начать игру</button>
+      </form>
+      <span class="timer"></span>
+    </div>
+
+    <div class="game-block">
+      <div class="blur"></div>
+      <div class="new-record"></div>
+      <div class="game-result flex">
+        <span class="game-title"></span>
+        <span class="game-time game-text"></span>
+        <span class="game-stat game-text"></span>
+      </div>
+    </div>
+
+    <div class="record-block">
+      <h1 class="subtitle">Рекорды</h1>
+      <div class="record-card">
+        <p class="level-name">2x2</p>
+        <p id="recordt0" class="level-rec">Время:</p>
+        <p id="recordd0" class="level-rec">Найдено карт:</p>
+        <p id="recordo0" class="level-rec">Открыто карт:</p>
+        <p id="recordr0" class="level-rec">Результативность:</p>
+      </div>
+      <div record="2" class="record-card">
+        <p class="level-name">4x4</p>
+        <p id="recordt1" class="level-rec">Время:</p>
+        <p id="recordd1" class="level-rec">Найдено карт:</p>
+        <p id="recordo1" class="level-rec">Открыто карт:</p>
+        <p id="recordr1" class="level-rec">Результативность:</p>
+      </div>
+      <div class="4card record-card">
+        <p class="level-name">6x6</p>
+        <p id="recordt2" class="level-rec">Время:</p>
+        <p id="recordd2" class="level-rec">Найдено карт:</p>
+        <p id="recordo2" class="level-rec">Открыто карт:</p>
+        <p id="recordr2" class="level-rec">Результативность:</p>
+      </div>
+      <div class="4card record-card">
+        <p class="level-name">8x8</p>
+        <p id="recordt3" class="level-rec">Время:</p>
+        <p id="recordd3" class="level-rec">Найдено карт:</p>
+        <p id="recordo3" class="level-rec">Открыто карт:</p>
+        <p id="recordr3" class="level-rec">Результативность:</p>
+      </div>
+      <div class="4card record-card">
+        <p class="level-name">10x10</p>
+        <p id="recordt4" class="level-rec">Время:</p>
+        <p id="recordd4" class="level-rec">Найдено карт:</p>
+        <p id="recordo4" class="level-rec">Открыто карт:</p>
+        <p id="recordr4" class="level-rec">Результативность:</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
